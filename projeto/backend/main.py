@@ -1,48 +1,59 @@
-# Importa a classe FastAPI e a classe HTTPException para tratar erros
-from fastapi import FastAPI, HTTPException
+import os
+from fastapi import FastAPI
+from fastapi.staticfiles import StaticFiles
 
-# Cria a instância da aplicação FastAPI, que será usada para definir rotas e configurações
+# Cria a instância da aplicação FastAPI para configurar as rotas e o servidor
 app = FastAPI()
 
-# Define uma rota HTTP GET no caminho raiz "/"
-@app.get("/")
-def hello_world():
-    """
-    Função associada ao endpoint raiz.
-    Retorna uma mensagem de boas-vindas em formato JSON.
-    """
-    return {"mensagem": "Olá, mundo! 🌍"}
+# Define o caminho absoluto da pasta de imagens para garantir que o servidor localize a pasta em qualquer ambiente
+PASTA_BASE = os.path.dirname(os.path.abspath(__file__))
+PASTA_IMAGENS = os.path.join(PASTA_BASE, "figurinhas")
 
+# Configura os arquivos estáticos montando o diretório de imagens na rota "/imgs"
+app.mount("/imgs", StaticFiles(directory=PASTA_IMAGENS), name="imgs")
 
-# Lista fictícia de figurinhas (simulando um banco de dados)
-FIGURINHAS = [
-    {"id": 1, "nome": "Alan Turing", "categoria": "IA"},
-    {"id": 2, "nome": "John McCarthy", "categoria": "IA"}
+# Lista contendo as figurinhas de exemplo com seus dados e a URL correspondente para a imagem estática
+figurinhas = [
+    {
+        "id": 1,
+        "nome": "Alan Turing",
+            "categoria": "IA",
+        "imagem_url": "/imgs/01-alan-turing.jpg"
+    },
+    {
+        "id": 2,
+        "nome": "John McCarthy",
+        "categoria": "IA",
+        "imagem_url": "/imgs/02-john-mccarthy.jpg"
+    }
 ]
 
 
-# Define uma rota HTTP GET no caminho "/figurinhas" para listar as figurinhas
+# Endpoint único GET "/figurinhas" que retorna a lista de figurinhas
 @app.get("/figurinhas")
 def listar_figurinhas():
     """
     Função associada ao endpoint /figurinhas.
-    Retorna uma lista com duas figurinhas de exemplo.
+    Retorna a lista de figurinhas contendo informações e caminhos de imagem.
     """
-    return FIGURINHAS
+    return figurinhas
 
+# Constante total do álbum
+TOTAL_ALBUM = 25
 
-# Define uma rota HTTP GET no caminho "/figurinhas/{figurinha_id}" para obter uma figurinha pelo ID
-@app.get("/figurinhas/{figurinha_id}")
-def obter_figurinha(figurinha_id: int):
+# Função para calcular estatísticas do álbum a partir da lista de figurinhas
+def estatisticas_album():
     """
-    Função associada ao endpoint /figurinhas/{figurinha_id}.
-    Busca e retorna uma figurinha específica com base no ID fornecido na rota.
-    Caso o ID não exista, lança uma exceção HTTP 404.
+    Calcula estatísticas do álbum a partir da lista de figurinhas.
+    - coladas: número de figurinhas presentes.
+    - faltam: quantidade restante para completar o álbum.
     """
-    # Procura a figurinha na lista de figurinhas
-    for figurinha in FIGURINHAS:
-        if figurinha["id"] == figurinha_id:
-            return figurinha
-    
-    # Se não encontrar, lança um erro HTTP 404 (Not Found)
-    raise HTTPException(status_code=404, detail="Figurinha não encontrada")
+    coladas = len(figurinhas)
+    faltam = TOTAL_ALBUM - coladas
+    return {"total_album": TOTAL_ALBUM, "coladas": coladas, "faltam": faltam}
+
+# Endpoint GET "/figurinhas/total" que devolve as estatísticas do álbum
+@app.get("/figurinhas/total")
+def get_estatisticas():
+    """Retorna as estatísticas do álbum de figurinhas."""
+    return estatisticas_album()
