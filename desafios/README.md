@@ -1,7 +1,7 @@
 # Desafios
 
 ## 📑 Índice
-- [Desafio 1](#desafio-1)
+- [Desafio 1](#desafio-1-um-bot%C3%A3o-para-alternar-o-tema-do-%C3%A1lbum)
 - [Desafio 2](#desafio-2)
 
 ## Desafio 1: Um botão para alternar o tema do álbum
@@ -25,21 +25,19 @@ Crie um sistema de troca de tema para a aplicação. No @[index.html], adicione 
 
 ### 📸 Resultado
 
-#### Tema escuro
+#### Tema escuro e claro
 
-![Capa tema escuro](./imagens/Print%20da%20capa%20em%20tema%20escuro%20(desafio%2001).png)
+<p align="center">
+  <img src="../imagens/Print da capa em tema escuro (desafio 01).png" alt="Tema escuro" width="44%">
+  <img src="../imagens/Print da capa em tema claro (desafio 01).png" alt="Tema claro" width="45%">
+</p>
 
-#### Tema claro
+#### Botão no tema escuro e claro
 
-![Capa tema claro](./imagens/Print%20da%20capa%20em%20tema%20claro%20(desafio%2001).png)
-
-#### Botão no tema escuro
-
-![Botão tema escuro](./imagens/Print%20do%20botão%20em%20tema%20escuro%20(desafio%2001).png)
-
-#### Botão no tema claro
-
-![Botão tema claro](./imagens/Print%20do%20botão%20em%20tema%20claro%20(desafio%2001).png)
+<p align="center">
+  <img src="../imagens/Print do botão em tema escuro (desafio 01).png" alt="Botão tema escuro" width="15%">
+  <img src="../imagens/Print do botão em tema claro (desafio 01).png" alt="Botão tema claro" width="15%">
+</p>
 
 ---
 
