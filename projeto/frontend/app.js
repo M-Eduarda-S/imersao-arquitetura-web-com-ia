@@ -1,4 +1,13 @@
 // ===================================================
+// INICIALIZAÇÃO DO TEMA (Claro / Escuro)
+// Aplica o tema salvo antes que a página renderize totalmente para evitar flashes visuais.
+// ===================================================
+const savedTheme = localStorage.getItem("theme");
+if (savedTheme === "light") {
+    document.body.classList.add("light-theme");
+}
+
+// ===================================================
 // CONFIGURAÇÃO DA API
 // Quando o frontend for servido pelo FastAPI (Dia 3), a API está
 // no mesmo servidor — usamos uma URL relativa ou o endereço completo.
@@ -286,6 +295,15 @@ document.addEventListener("DOMContentLoaded", () => {
             iconOff.classList.add("hidden");
         }
     });
+
+    // 3.5 Theme Toggle Control
+    const themeToggle = document.getElementById("theme-toggle");
+    if (themeToggle) {
+        themeToggle.addEventListener("click", () => {
+            const isLight = document.body.classList.toggle("light-theme");
+            localStorage.setItem("theme", isLight ? "light" : "dark");
+        });
+    }
 
     // 4. Navigation controls and events
     if (pageFlip) {
