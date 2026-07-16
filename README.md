@@ -1,22 +1,66 @@
 # Imersão Arquitetura Web com IA
 
-Repositório contendo o projeto e desafios desenvolvidos durante a Imersão Arquitetura Web com IA promovida pela Alura.
+Repositório com o projeto principal e os desafios desenvolvidos durante a Imersão Arquitetura Web com IA promovida pela Alura.
 
+---
+## 📑 Índice
 
-## 📅 Organização da imersão
+- 🛠️ [Tecnologias utilizadas](#%EF%B8%8F-tecnologias-utilizadas)
+- 📅 [Conteúdo da Imersão](#-conteúdo-da-imersão)
+- 📁 [Projeto](#-projeto)
+- 📚 [Desafios](#-desafios)
+- 📸 [Demonstração](#-demonstração)
+- 🏆 [Certificado](#-certificado)
+
+---
+
+## 🛠️ Tecnologias utilizadas 
+
+- HTML5
+- CSS3
+- JavaScript
+- Python
+- FastAPI
+- Google Antigravity
+
+---
+
+## 📅 Conteúdo da Imersão
 | Aula | Conteúdo | Situação |
 |------|----------|--------|
-| Aula de abertura | Introdução a imersão | Concluído |
-| Dia 1 | HTML + CSS + JavaScript + Google Antigravity | Concluído |
-| Dia 2 | Python + FastAPI + Google Antigravity | Concluído |
-| Dia 3 | - | - |
-| Dia 4 | - | - |
+| Aula de abertura | Apresentação da imersão | Concluído |
+| Dia 1 | HTML • CSS • JavaScript • Google Antigravity | Concluído |
+| Dia 2 | Python • FastAPI • Google Antigravity | Concluído |
+| Dia 3 | - | Em andamento |
+| Dia 4 | - | Em andamento |
 
-## 📚 Desafios da imersão
-- **[Desafio 1](.desafios/desafio-01/)**: Um botão para alternar o tema do álbum
-- **[Desafio 2](.desafios/desafio-02/)**: Buscar uma figurinha pelo id (com erro 404)
-- **Desafio 3**:
+---
 
-## 📄 Certificado
+## 📁 Projeto
+O projeto principal desenvolvido durante a imersão está disponível na pasta abaixo.
 
-Disponível no meu [portfólio](https://github.com/M-Eduarda-S/portfolio-projetos/tree/main/certificados/alura).
+📂 [Abrir projeto](./projeto/)
+
+---
+
+## 📚 Desafios
+| Desafio | Descrição |
+|---------|-----------|
+| [Desafio 1](./desafios/desafio-01/) | Adicionar um botão para alternar o tema do álbum. |
+| [Desafio 2](./desafios/desafio-02/) | Buscar uma figurinha pelo ID, incluindo tratamento para erro 404. |
+| Desafio 3 | Em breve. |
+
+---
+
+## 📸 Demonstração
+
+### Projeto final
+
+![Tela inicial](./imagens/tela-inicial.png)
+
+---
+
+## 🏆 Certificado
+O certificado de conclusão desta imersão está disponível no meu repositório de portfólio.
+
+🔗 [Visualizar certificado](https://github.com/M-Eduarda-S/portfolio-projetos/tree/main/certificados/alura)
