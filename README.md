@@ -46,7 +46,7 @@ O projeto principal desenvolvido durante a imersão está disponível na pasta a
 ## 📚 Desafios
 | Desafio | Descrição |
 |---------|-----------|
-| [Desafio 1](./desafios/desafio-01/) | Adicionar um botão para alternar o tema do álbum. |
+| [Desafio 1](./desafios/#desafio-1-um-bot%C3%A3o-para-alternar-o-tema-do-%C3%A1lbum) | Adicionar um botão para alternar o tema do álbum. |
 | [Desafio 2](./desafios/desafio-02/) | Buscar uma figurinha pelo ID, incluindo tratamento para erro 404. |
 | Desafio 3 | Em breve. |
 
