@@ -1,8 +1,14 @@
 # Desafios
 
+Repositório com as soluções dos desafios da Imersão Arquitetura Web com IA da Alura. Cada seção apresenta o enunciado da atividade, o prompt utilizado e o resultado obtido durante a resolução.
+
+---
+
 ## 📑 Índice
 - [Desafio 1](#desafio-1-um-bot%C3%A3o-para-alternar-o-tema-do-%C3%A1lbum)
 - [Desafio 2](#desafio-2)
+
+---
 
 ## Desafio 1: Um botão para alternar o tema do álbum
 
@@ -25,14 +31,14 @@ Crie um sistema de troca de tema para a aplicação. No @[index.html], adicione 
 
 ### 📸 Resultado
 
-#### Tema escuro e claro
+#### Capa
 
 <p align="center">
   <img src="../imagens/Print da capa em tema escuro (desafio 01).png" alt="Tema escuro" width="45%">
   <img src="../imagens/Print da capa em tema claro (desafio 01).png" alt="Tema claro" width="45%">
 </p>
 
-#### Botão no tema escuro e claro
+#### Botão de troca de tema
 
 <p align="center">
   <img src="../imagens/Print do botão em tema escuro (desafio 01).png" alt="Botão tema escuro" width="15%">
