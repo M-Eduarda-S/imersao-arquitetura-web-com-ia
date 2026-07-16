@@ -28,7 +28,7 @@ Crie um sistema de troca de tema para a aplicação. No @[index.html], adicione 
 #### Tema escuro e claro
 
 <p align="center">
-  <img src="../imagens/Print da capa em tema escuro (desafio 01).png" alt="Tema escuro" width="44%">
+  <img src="../imagens/Print da capa em tema escuro (desafio 01).png" alt="Tema escuro" width="45%">
   <img src="../imagens/Print da capa em tema claro (desafio 01).png" alt="Tema claro" width="45%">
 </p>
 
