@@ -48,3 +48,8 @@ Crie um sistema de troca de tema para a aplicação. No @[index.html], adicione 
 ---
 
 ## Desafio 2: ...
+
+---
+
+> [!NOTE]
+> Os prompts apresentados neste README foram utilizados para gerar as implementações dos desafios. Os códigos resultantes foram mantidos na pasta [projeto](../projeto), onde é possível visualizar a versão final da aplicação.
