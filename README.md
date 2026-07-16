@@ -63,4 +63,4 @@ O projeto principal desenvolvido durante a imersão está disponível na pasta a
 ## 🏆 Certificado
 O certificado de conclusão desta imersão está disponível no meu repositório de portfólio.
 
-🔗 [Visualizar certificado](https://github.com/M-Eduarda-S/portfolio-projetos/tree/main/certificados/alura)
+🔗 [Visualizar certificado](https://github.com/M-Eduarda-S/portfolio/tree/main/certificados/alura/Certificado%20da%20imersão%arquitetura%20web%20com%20IA.pdf)
