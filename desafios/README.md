@@ -1,6 +1,11 @@
 # Desafios
 
-Repositório com as soluções dos desafios da Imersão Arquitetura Web com IA da Alura. Cada seção apresenta o enunciado da atividade, o prompt utilizado e o resultado obtido durante a resolução.
+Repositório com a documentação das soluções dos desafios da **Imersão Arquitetura Web com IA**, promovida pela Alura. Para cada desafio são apresentados:
+
+- o enunciado da atividade;
+- o prompt utilizado;
+- o resultado obtido;
+- capturas de tela da implementação.
 
 ---
 
@@ -13,17 +18,17 @@ Repositório com as soluções dos desafios da Imersão Arquitetura Web com IA d
 
 ## Desafio 1: Um botão para alternar o tema do álbum
 
-Hoje o álbum tem um tema fixo (azul tech sobre fundo escuro), definido pelas variáveis de cor no bloco :root do style.css. O desafio é instruir a IA a criar um segundo tema (claro) e um botão "🌓 Trocar tema" que alterne entre os dois temas ao ser clicado — sem recarregar a página. </br>
+Hoje o álbum tem um tema fixo (azul tech sobre fundo escuro), definido pelas variáveis de cor no bloco :root do `style.css`. O desafio é instruir a IA a criar um segundo tema (claro) e um botão "🌓 Trocar tema" que alterne entre os dois temas ao ser clicado — sem recarregar a página. </br>
 
 Isso envolve as três camadas do frontend de uma vez:
 
-HTML → adicionar o botão no index.html </br>
-CSS → criar uma variação de tema no style.css </br>
-JS → fazer o clique alternar o tema no app.js </br>
+- HTML → adicionar o botão no `index.html`
+- CSS → criar uma variação de tema no `style.css` 
+- JS → fazer o clique alternar o tema no `app.js`
 
 O objetivo não é você escrever esse código, e sim descrever a tarefa para a IA de forma que ela entregue tudo conectado e funcionando.
 
-### 💬 Prompt criado
+### 💬 Prompt utilizado
 ```text
 Crie um sistema de troca de tema para a aplicação. No @[index.html], adicione um botão com o texto "🌓 Trocar tema" em um local apropriado da interface. No @[style.css], mantenha o tema escuro atual e crie um tema claro utilizando variáveis CSS, sem remover as existentes. No @[app.js], implemente a lógica para que, ao clicar no botão, o tema seja alternado entre escuro e claro, sem recarregar a página. Utilize uma classe no elemento <body> para controlar o tema e mantenha o código organizado e integrado entre HTML, CSS e JavaScript.
 ```
@@ -47,7 +52,7 @@ Crie um sistema de troca de tema para a aplicação. No @[index.html], adicione 
 ---
 
 ## Desafio 2: Buscar uma figurinha pelo id (com erro 404)
-No Dia 2, o main.py tem dois endpoints: GET / e GET /figurinhas (que devolve a lista das 2 figurinhas em JSON). Seu desafio é instruir a IA a adicionar um terceiro endpoint que busca uma única figurinha pelo seu id: 
+No Dia 2, o `main.py` tem dois endpoints: GET / e GET /figurinhas (que devolve a lista das 2 figurinhas em JSON). Seu desafio é instruir a IA a adicionar um terceiro endpoint que busca uma única figurinha pelo seu id: 
 
 GET /figurinhas/1 → devolve a figurinha do Alan Turing </br>
 GET /figurinhas/2 → devolve a figurinha do John McCarthy </br>
@@ -61,7 +66,7 @@ Seu prompt precisa deixar claro que é para adicionar ao arquivo existente, mant
 Especifique o comportamento dos dois caminhos: quando o id existe (retorna a figurinha) e quando não existe (retorna 404). </br>
 Mencione que, no FastAPI, o erro 404 se faz com HTTPException — ou simplesmente peça "retorne erro 404 se o id não existir" e deixe a IA escolher a forma. </br>
 
-### 💬 Prompt criado
+### 💬 Prompt utilizado
 ```text
 No mesmo arquivo @[main.py], adicione um terceiro endpoint, mantendo os endpoints já existentes (`/` e `/figurinhas`) sem alterar seu funcionamento.
 O novo endpoint deve buscar uma única figurinha pelo seu ID utilizando um parâmetro de rota dinâmico.
@@ -77,15 +82,21 @@ Utilize o recurso apropriado do FastAPI para retornar o erro 404 e mantenha o c�
 ### 📸 Resultado
 
 #### Requisição com figurinha encontrada
-<img src="../imagens/Print da figurinha encontrada (desafio 2).png" alt="Print da figurinha encontrada" width="80%">
+
+<p align="center">
+  <img src="../imagens/Print da figurinha encontrada (desafio 2).png" alt="Print da figurinha encontrada" width="100%">
+</p>
 
 #### Requisições com figurinha não encontrada
-<img src="../imagens/Print da figurinha não encontrada (desafio 2).png" alt="Print da figurinha não encontrada" width="80%">
+
+<p align="center">
+  <img src="../imagens/Print da figurinha não encontrada (desafio 2).png" alt="Print da figurinha não encontrada" width="100%">
+</p>
 
 ---
 
 ## Desafio 3: Endpoint de contagem e estatística do álbum
-No Dia 3, o main.py tem a lista figurinhas (hoje com 2 itens) e o endpoint GET /figurinhas que a devolve em JSON. Mas o álbum completo tem 25 slots para preencher. </br>
+No Dia 3, o `main.py` tem a lista figurinhas (hoje com 2 itens) e o endpoint GET /figurinhas que a devolve em JSON. Mas o álbum completo tem 25 slots para preencher. </br>
 
 Seu desafio é instruir a IA a adicionar um novo endpoint GET /figurinhas/total que não devolve a lista, e sim uma estatística calculada a partir dela: 
 
@@ -107,7 +118,7 @@ Reforce que os valores devem ser calculados a partir da lista, e não valores fi
 Peça para a IA usar uma função com nome claro (ex: estatisticas_album).
 
 
-### 💬 Prompt criado
+### 💬 Prompt utilizado
 ```text
 Faça no @[main.py] um novo endpoint GET /figurinhas/total, mantendo o endpoint GET /figurinhas que já existe.
 
@@ -127,10 +138,12 @@ Utilize uma função chamada estatisticas_album e mantenha o código organizado.
 ### 📸 Resultado
 
 #### Resultado da requisição
-<img src="../imagens/Print do resultado da requisição (desafio 3).png" alt="Print da requisição" width="80%">
 
+<p align="center">
+  <img src="../imagens/Print do resultado da requisição (desafio 3).png" alt="Print da requisição" width="100%">
+</p>
 
 ---
 
 > [!NOTE]
-> Os prompts apresentados neste README foram utilizados para gerar as implementações dos desafios. Os códigos resultantes foram mantidos na pasta [projeto](../projeto), onde é possível visualizar a versão final da aplicação.
+> Os prompts apresentados neste README foram utilizados para gerar as implementações dos desafios. Os códigos produzidos foram mantidos na pasta [`projeto`](../projeto), onde é possível visualizar a versão final da aplicação desenvolvida durante a imersão.
