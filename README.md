@@ -47,9 +47,9 @@ O código-fonte da aplicação desenvolvida ao longo da imersão está disponív
 ## 📚 Desafios
 | Desafio | Descrição |
 |---------|-----------|
-| [Desafio 1](./desafios/#desafio-1-um-bot%C3%A3o-para-alternar-o-tema-do-%C3%A1lbum) | Adicionar um botão para alternar o tema do álbum. |
-| [Desafio 2](./desafios/#desafio-2-buscar-uma-figurinha-pelo-id-com-erro-404) | Buscar uma figurinha pelo ID, incluindo tratamento para erro 404. |
-| [Desafio 3](./desafios/#desafio-3-endpoint-de-contagem-e-estat%C3%ADstica-do-%C3%A1lbum) | Criar um endpoint que retorna estatísticas do álbum calculadas dinamicamente. |
+| [Desafio 1]([./desafios/#desafio-1-um-bot%C3%A3o-para-alternar-o-tema-do-%C3%A1lbum](https://github.com/M-Eduarda-S/imersao-arquitetura-web-com-ia/blob/main/desafios/README.md#desafio-1-um-bot%C3%A3o-para-alternar-o-tema-do-%C3%A1lbum)) | Adicionar um botão para alternar o tema do álbum. |
+| [Desafio 2](https://github.com/M-Eduarda-S/imersao-arquitetura-web-com-ia/blob/main/desafios/README.md#desafio-2-buscar-uma-figurinha-pelo-id-com-erro-404) | Buscar uma figurinha pelo ID, incluindo tratamento para erro 404. |
+| [Desafio 3](https://github.com/M-Eduarda-S/imersao-arquitetura-web-com-ia/blob/main/desafios/README.md#desafio-3-endpoint-de-contagem-e-estat%C3%ADstica-do-%C3%A1lbum) | Criar um endpoint que retorna estatísticas do álbum calculadas dinamicamente. |
 | [Desafio 4]() | Em breve. |
 
 ---
