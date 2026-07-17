@@ -29,11 +29,11 @@ Repositório contendo o projeto principal e as soluções dos desafios desenvolv
 ## 📅 Conteúdo da Imersão
 | Aula | Conteúdo | Situação |
 |------|----------|--------|
-| Aula de abertura | Arquitetura Web, IA no desenvolvimento e apresentação do projeto | Concluído |
+| Aula de abertura ao vivo | Arquitetura Web, IA no desenvolvimento e apresentação do projeto | Concluído |
 | Dia 1 | Front-end (HTML, CSS e JavaScript) e Google Antigravity | Concluído |
 | Dia 2 | Arquitetura cliente-servidor, HTTP, APIs, JSON, FastAPI e Uvicorn | Concluído |
 | Dia 3 | JSON, novos endpoints, arquivos estáticos e integração front-end/back-end | Concluído |
-| Dia 4 | - | Em andamento |
+| Dia 4 + live de encerramento | Integração dos sistemas de forma segura, configuração de CORS e compreensão da Same-Origin Policy | Concluído |
 
 ---
 
@@ -47,20 +47,22 @@ O código-fonte da aplicação desenvolvida ao longo da imersão está disponív
 ## 📚 Desafios
 | Desafio | Descrição |
 |---------|-----------|
-| [Desafio 1]([./desafios/#desafio-1-um-bot%C3%A3o-para-alternar-o-tema-do-%C3%A1lbum](https://github.com/M-Eduarda-S/imersao-arquitetura-web-com-ia/blob/main/desafios/README.md#desafio-1-um-bot%C3%A3o-para-alternar-o-tema-do-%C3%A1lbum)) | Adicionar um botão para alternar o tema do álbum. |
+| [Desafio 1](https://github.com/M-Eduarda-S/imersao-arquitetura-web-com-ia/blob/main/desafios/README.md#desafio-1-um-bot%C3%A3o-para-alternar-o-tema-do-%C3%A1lbum) | Adicionar um botão para alternar o tema do álbum. |
 | [Desafio 2](https://github.com/M-Eduarda-S/imersao-arquitetura-web-com-ia/blob/main/desafios/README.md#desafio-2-buscar-uma-figurinha-pelo-id-com-erro-404) | Buscar uma figurinha pelo ID, incluindo tratamento para erro 404. |
 | [Desafio 3](https://github.com/M-Eduarda-S/imersao-arquitetura-web-com-ia/blob/main/desafios/README.md#desafio-3-endpoint-de-contagem-e-estat%C3%ADstica-do-%C3%A1lbum) | Criar um endpoint que retorna estatísticas do álbum calculadas dinamicamente. |
-| [Desafio 4]() | Em breve. |
 
 ---
 
 ## 📸 Demonstração
 
-### Tela inicial da aplicação
+### Projeto final
+
+A imagem abaixo demonstra a integração entre o front-end e o back-end da aplicação. As figurinhas exibidas na interface são carregadas dinamicamente a partir da API desenvolvida com FastAPI, demonstrando a comunicação entre os dois componentes da arquitetura web.
 
 <p align="center">
-    <img src="./imagens/tela-inicial.png" width="90%">
+    <img src="./imagens/Print de uma parte do projeto completo.png" alt="Imagem de uma página do projeto" width="50%">
 </p>
+
 
 ---
 
@@ -68,6 +70,7 @@ O código-fonte da aplicação desenvolvida ao longo da imersão está disponív
 
 ```text
 
+.
 ├── projeto/     # Código-fonte da aplicação
 ├── desafios/    # Documentação dos desafios e prompts utilizados
 ├── imagens/     # Capturas de tela utilizadas nos READMEs
@@ -78,6 +81,6 @@ O código-fonte da aplicação desenvolvida ao longo da imersão está disponív
 ---
 
 ## 🏆 Certificado
-O certificado de conclusão desta imersão está disponível no meu repositório de portfólio.
+O certificado de conclusão da imersão está disponível no meu repositório de portfólio.
 
-🔗 [Visualizar certificado](https://github.com/M-Eduarda-S/portfolio/tree/main/certificados/alura/Certificado%20da%20imersão%20arquitetura%20web%20com%20IA.pdf)
+🔗 [Visualizar certificado](https://github.com/M-Eduarda-S/portfolio/blob/main/certificados/alura/Certificado%20da%20imersão%20arquitetura%20web%20com%20IA.pdf)
